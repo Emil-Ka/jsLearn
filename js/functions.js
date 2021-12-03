@@ -8,3 +8,4 @@ const calc = (a, b) => {
 };
 console.log(calc(8, 9));
 console.log(calc(8, 0));
+console.log(calc(7, 90));
