@@ -1,11 +1,35 @@
-const str = "Hello World";
-const leftBorderSize = "12.34px";
-console.log(str.length);
-console.log(str.indexOf("Wox"));
-console.log(str.slice(0, 3));
-console.log(str.substr(1, 6));
-console.log(parseInt(leftBorderSize));
-console.log(parseFloat(leftBorderSize));
-console.log(Math.round(145.5));
-console.log(Math.PI);
-console.log(Math.sin(0));
+const obj = {
+   name: "john",
+   age: 16,
+   city: "London",
+   colors: {
+      border: "red",
+      bg: "white"
+   }
+};
+
+for (let key in obj) {
+   if (typeof obj[key] === "object") {
+      for (let i in obj[key]) {
+         console.log(`Свойство ${i} имеет значение ${obj[key][i]}`);
+      }
+   }
+   else {
+      console.log(`Свойство ${key} имеет значение ${obj[key]}`);
+   }  
+}
+
+const {border, bg} = obj.colors;
+console.log(border, bg);
+
+let long = Object.keys(obj);
+console.log(long);
+console.log(long.length);
+
+const arr = {
+   makeTest: function(name) {
+      console.log(`Привет, ${name}`);
+   }
+};
+
+arr.makeTest("Эмиль");
