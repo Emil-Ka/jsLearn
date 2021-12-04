@@ -1,2 +1,11 @@
-const str =;
-console.log(parseInt(str));
+const str = "Hello World";
+const leftBorderSize = "12.34px";
+console.log(str.length);
+console.log(str.indexOf("Wox"));
+console.log(str.slice(0, 3));
+console.log(str.substr(1, 6));
+console.log(parseInt(leftBorderSize));
+console.log(parseFloat(leftBorderSize));
+console.log(Math.round(145.5));
+console.log(Math.PI);
+console.log(Math.sin(0));
