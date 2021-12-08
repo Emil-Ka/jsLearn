@@ -1,8 +1,4 @@
-const array = [19, 90, 23, 41, 53, 76, 9];
-console.log(array.sort());
+const str = "string";
+const tr = str.toLowerCase();
 
-function compareNum(a, b) {
-   return a - b;
-}
-
-console.log(array.sort(compareNum));
+console.log(typeof(tr));
